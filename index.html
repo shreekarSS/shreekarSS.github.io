@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shreekara portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+ <section id="about-me">
+    <nav>
+      <div class="my-logo">Shreekara Shastry</div>
+    </nav>
+    <div class="flex flex-1">
+      <div class="about-me-info row">
+        <div class="about-me-info-container">
+          <figure class="about-me-picture-mask">
+            <img src="./assets/myPicture.jpg" class="about-me-picture" alt="Picture of Me!">
+          </figure>
+          <h1 class="about-me-info-title">
+            Hey! I'm <span class="text-grey">Shreekara Shastry</span>&nbsp;<span class="wave">👋</span>
+          </h1>
+          <p class="about-me-info-para">
+            I'm presently a <strong class="text-purple">Graduate student</strong>
+            at the Northeastern University, Boston <br>
+            I have worked as a Software Engineer at <strong class="text-purple"> Red Hat</strong>
+            <br>
+          </p>
+        </div>
+      </div>
+    </div>
+
+ </section>
+
+
+ <div class="container">
+<a href="https://github.com/shreekarSS" style="font-size: 45px;">My GitHub</a>
+
+      <h1>Ceph - Software Quality Engineer</h1>
+      <div class="info">
+        <ul>
+          <p>Worked under <b>Hemant Gurav(manager), Harish Nallur Vittal Rao and Vasu Kulkarni</b> during my tenure at Ceph</p>
+        </ul>
+        <h2>RBD</h2>
+        <ul>
+          <li>Worked closely with <b> Vasu Kulkarni </b> on the Ceph QE team to conduct basic functional testing of RBD as an intern.</li>
+          <li>Tested features such as thin provisioning, snapshots, cloning, striping, and mirroring to ensure they were functioning correctly.</li>
+        </ul>
+         <h2>RGW</h2>
+         <ul>
+      <li>Conducted basic functional testing on Ceph RGW's RESTful API, S3 and Swift compatible APIs, versioning, lifecycle management (including object expiration), multi-site replication, and NFS Ganesha during my internship.</li>
+      <li>Developed automation scripts using Boto3, the Python SDK for AWS, to interact with Amazon S3, performing tasks such as creating, deleting, and modifying buckets and objects, as well as setting up versioning and lifecycle policies.</li>
+      <li>Configured lifecycle management policies to automatically expire objects based on their age or other criteria, ensuring that data was kept up to date and reducing storage costs.</li><li>Worked with <b>Casey Bodley</b> on enhancing the Ceph RGW testing framework specifically for object lifecycle management testing, identifying and resolving issues to improve the overall reliability and efficiency of the system.</li>
+    </ul>
+    <h2>CephFS</h2>
+    <ul>
+      <li>Developed a comprehensive CephFS automation suite for functional testing, covering key areas such as MDS directory pinnings, running IO workloads, and performing MDS operations.</li>
+      <li>Led efforts to adjust and fine-tune various MDS configurations, optimizing performance and stability.</li>
+      <li>Worked closely with Patrick Donnelly, a lead CephFS developer, to identify and prioritize key areas for testing, and to incorporate feedback and recommendations for improving the testing framework.</li>
+      <li>Utilized knowledge of CephFS features such as scalability, high availability, and fault tolerance to design and execute comprehensive test scenarios.</li>
+      <li>Developed and executed tests to validate important CephFS capabilities such as dynamic rebalancing of data, support for snapshots and clones, and fine-grained access control.</li>
+    </ul>
+
+    <h2>CephCI</h2>
+    <ul>
+      <li>Contributed to CephCI, a testing framework for the Ceph distributed storage system, alongside Vasu, by working on the ecosystem of the CephCI architecture and writing libraries for Ceph components to support testing and automation efforts.</li>
+      <li>Maintained and updated code in the CephCI repository on GitHub and collaborated with team members to identify areas for improvement in the CephCI testing framework and implement solutions.</li>
+      <li><a href="https://github.com/red-hat-storage/cephci">GitHub Link</a></li>
+    </ul>
+
+    </div>
+      <h1>OCS (ODF)-  Software Quality Engineer</h1>
+      <div class="info">
+          <p>Worked under <b>Elad ben aharon and Harish Nallur Vittal Rao</b></p>
+  <ul>
+    <li>Spearheaded functional and end-to-end testing for Red Hat OpenShift Container Storage using Kubernetes, proactively managing defects, and automating test cases.</li>
+    <li>Contributed to development of an automation framework, OCS-CI (OpenShift Container Storage), based on the pytest framework, resulting in more streamlined and efficient testing processes. </li>
+    <li>Troubleshooting customer defects and developing custom automation scripts to support customer requests, resulting in improved customer satisfaction.</li>
+    <li>Worked on functional testing and end-to-end testing, handling workload and customer defects, test case writing, and automation.</li>
+      <li><a href="https://github.com/red-hat-storage/ocs-ci">GitHub Link</a></li>
+
+  </ul>
+      </div>
+        <h1>Open Services- Software Engineering Intern</h1>
+      <div class="info">
+              <ul>
+          <p>Worked under <b>Christoph Görn (manager),</b> during my tenure at Openservices</p>
+        </ul>
+    <ul>
+      <li>Contributed to the development of Red Hat's Project Thoth, an AI system that provides recommendations for improving the performance and security of Python applications, using Apache Kafka and Argo Workflows to support continuous learning.<a href="https://github.com/thoth-station">Thoth station GitHub </a> </li>
+      <li>Developed the TTM-as-a-Service (Time to Merge) Github bot application for predicting pull request merge times using machine learning and providing insights into the development process. <a href="https://github.com/thoth-station/ttm-as-a-service">GitHub Link</a></li>
+      <li>Assisted in the development of new features and resolved bugs for the GitHub Bot Kebechet and Thoth-Station Rest APIs, resulting in overall software quality.</li>
+    </ul>
+    </div>
+    <script>
+      window.addEventListener('load', function() {
+        // First heading
+        var cephInfo1 = document.querySelector('.container .info');
+        var cephTitle1 = document.querySelector('.container h1');
+
+        cephTitle1.addEventListener('click', function() {
+          cephInfo1.classList.toggle('active');
+        });
+
+        // Second heading
+        var cephInfo2 = document.querySelectorAll('.container .info')[1];
+        var cephTitle2 = document.querySelectorAll('.container h1')[1];
+
+        cephTitle2.addEventListener('click', function() {
+          cephInfo2.classList.toggle('active');
+        });
+      });
+          // Third heading
+        var thothInfo = document.querySelectorAll('.container .info')[2];
+        var thothTitle = document.querySelectorAll('.container h1')[2];
+
+        thothTitle.addEventListener('click', function() {
+          thothInfo.classList.toggle('active');
+        });
+
+    </script>
+
+
+  </body>
+</html>
