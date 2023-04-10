@@ -64,15 +64,15 @@
         border-radius: 1rem;
         box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
         background-color: #fff;
-        opacity: 0;
+        /* opacity: 0; */
         transform: translateY(20px);
         transition: all 0.3s ease-in-out;
       }
 
-      .info.active {
+      /* .info.active {
         opacity: 1;
         transform: translateY(0);
-      }
+      } */
 
       .info p {
         font-size: 1.6rem;
@@ -80,9 +80,9 @@
         margin-bottom: 1.6rem;
       }
 
-      .info p:last-child {
+      /* .info p:last-child {
         margin-bottom: 0;
-      }
+      } */
 
       .info li {
         font-size: 1.4rem;
