@@ -1,12 +1,41 @@
       body {
         font-family: Arial, sans-serif;
         color: #333;
-        background-image: url("assets/rh_back.png");
-  background-size: 100% auto;
+        background-image: url("assets/rh_top.png");
+  background-size: 10rem;
   background-repeat: no-repeat;
   background-position: center top;
       }
 
+      .scroll-down {
+        font-family: Arial, sans-serif;
+        font-size: 24px;
+        color: #160202;
+        text-align: center;
+        position: absolute;
+        bottom: 50px;
+        left: 82%;
+        transform: translateX(-50%);
+        z-index: 1;
+        animation: scroll 2s ease-in-out infinite;
+      }
+      
+      @keyframes scroll {
+        0% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        50% {
+          opacity: 0.5;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      
       .container {
         max-width: 800px;
         margin: 0 auto;
@@ -1051,5 +1080,6 @@ footer {
     flex-direction: column;
     margin-left: 1rem;
 }
+
 
 }
